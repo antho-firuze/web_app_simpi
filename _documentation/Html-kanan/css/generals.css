@@ -1,0 +1,300 @@
+/* *********************** GENERAL SETTINGS *********************** */
+
+h1, p {
+
+}
+/* mac hide\*/
+
+* html #centrecontent {
+	height:1%;
+}/* combat IE's 3 pixel jog */
+/* end hide*/
+
+/* safari and opera initial 100% height fix */
+
+.clean, .clr, .clearfix {
+	overflow:auto;
+	float:none !important;
+	clear: both; 
+	display:block !important;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.sectiontableentry1,.sectiontableentry2 {
+	padding: 2px 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	padding: 0px;
+}
+
+h4, h5, h6 {
+	font-weight: bold;
+}
+
+.sectiontableheader a {
+	text-decoration:underline;
+}
+
+.sectiontableheader a:hover {
+	text-decoration:underline;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+	border: 0;
+}
+
+#lbCenter a {
+	transition:none;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;	
+}
+
+a.image, a.image:hover {
+	border:0;
+}
+
+/* Misc */
+
+small {
+	font-size:65%;
+}
+
+.createdate {
+	font-size:11px;
+}
+
+.modifydate,.mosimage_caption {
+	font:10px Arial,Helvetica,sans-serif;
+	margin-left:3px;
+	padding-bottom:5px;
+}
+
+.mosimage_caption {
+	font-style: italic;
+}
+
+.contenttoc {
+	padding: 10px;
+	text-align: left;
+}
+
+.buttonheading img {
+	border: none; 
+	margin: 0;
+}
+
+fieldset {
+	border:0;
+}
+
+#form-login fieldset { 
+	border: 0px; 
+	width: auto !important; 
+	padding: 0;
+	font-size:11px;
+}
+
+#form-login ul { 
+	margin:5px 0 0 10px; 
+	padding: 0; 
+}
+
+div.moduletable { 
+	margin: 0; 
+	position:relative;
+}
+
+
+/* Tooltips */
+.tip-wrap {
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	position:relative;
+	z-index:10000;
+}
+
+.tip-title {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.tip-text {
+	font-size: 100%;
+	margin: 0;
+}
+
+/* content tables */
+
+table,
+table td {
+	padding:0;
+	margin:0;
+	vertical-align:top;
+}
+
+table th {
+	border-collapse: collapse;
+}
+
+td.sectiontableheader {
+	padding: 4px;
+	background:#CCCCCC;
+}
+
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+	padding: 4px;
+}
+
+td.sectiontableentry0,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+	padding: 3px;
+}
+
+table.contentpane {
+	border: none;
+	width: 100%;
+}
+
+table.contentpaneopen {
+	margin:0 !important;
+}
+
+table.contenttoc {
+	margin: 0 0 10px 10px;
+	padding: 0;
+	width: 35%;
+	float: right;
+}
+
+table.contenttoc a {
+	text-decoration: none;
+}
+
+table.contenttoc td {
+	padding: 1px 5px 1px 25px;
+	background: url(../images/bullet.png) no-repeat 5% 50%;
+}
+
+table.contenttoc th {
+	padding: 0 0 3px;
+	border-bottom: 1px solid #CCCCCC;
+	text-indent: 5px;
+}
+
+table.poll {
+	padding: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.pollstableborder {
+	padding: 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+}
+
+table.pollstableborder img {
+	vertical-align: baseline;
+}
+
+table.pollstableborder td {
+	padding: 4px!important;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.pollstableborder tr.sectiontableentry1 td {
+	background: #ECECEC;
+}
+
+table.searchintro {
+	padding: 10px 0;
+	width: 100%;
+}
+
+table.searchintro td {
+	padding: 5px!important;
+}
+
+table.adminform {
+}
+
+.adminform .inputbox {
+}
+
+
+/* System Message */
+
+#messages-overlay {
+	z-index:100;
+}
+
+#system-message {
+	margin-bottom: 20px !important; 
+	font-size:11px;
+}
+
+#system-message dd.message {
+	padding-bottom: 20px !important; 
+	display:block;
+}
+
+#system-message dd.message ul { 
+	margin:0px;
+	padding:5px; 
+	font-size:16px;
+	font-weight:bold;
+	color:#981e2e;
+	background:#faf1f2;
+	border:0;
+}
+
+#system-message dd.error ul { 
+	margin:0px;
+	padding:10px !important; 
+	color:#FF0000; 
+	background: #fff 4px center no-repeat; 
+	text-indent:0px;
+	font-weight:bold;
+}
+
+#system-message dd.notice ul { 
+	margin:0px; 
+	padding-left: 40px; 
+	color:#FF0000; 
+	background: #fff 4px center no-repeat; 
+	border:0;
+	text-indent:0px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#system-message dd.error ul li,
+#system-message dd.message ul li,
+#system-message dd.notice ul li { 
+	margin:0;
+	padding:0;
+	background-image:none;
+	list-style:none;
+	text-indent:0;
+}
+
+/* *********************** END GENERAL SETTINGS *********************** */

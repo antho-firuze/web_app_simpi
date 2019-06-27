@@ -1,0 +1,1327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UI Elements | Eternity Admin Theme | Template</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="description" content="This template is the perfect way to design a website with hundreds of possible features and plugins required while designing/developing a Website. It gives you different layouts and plugins to design a dashboard or a webform. Based on Jquery, the interface is light,responsive and ready to use. Eternity Admin provides custom layouts, error pages and themes to be used with your website. One of the main features of Eternity Admin is that it is compatible with all browsers. With more than 100 different buttons styles and grid layouts, this template becomes even more powerful." />
+
+<meta name="keywords" content="dashboard, template, admin, theme, website, free, layout, web, responsive" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css"  />
+<link href="css/custom.css" rel="stylesheet" type="text/css"  />
+<link href="css/data-table.css" rel="stylesheet" type="text/css"  />
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"  />
+<link href="css/ui-slider.css" rel="stylesheet" type="text/css"  />
+<link href="css/jquery.miniColors.css" rel="stylesheet" type="text/css"  />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+
+<script src="js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/vertlib.min.js"></script><!-- Right Menu Fixed Scroll-->
+<script type="text/javascript" src="js/StickyScroller.min.js"></script><!-- Right Menu Fixed Scroll-->
+
+<script type="text/javascript" src="js/jquery.miniColors.js"></script>
+
+<script type='text/javascript' src='js/fullcalendar.min.js'></script>
+<script src="js/elfinder.min.js" type="text/javascript" charset="utf-8"></script>
+
+	
+</head>
+
+<body>
+ 
+   <div class="header">
+    
+           <div id="logo"><img src="images/logo.png" alt="/" /></div>
+           
+           <div class="top-nav">
+               <ul>
+                   <li><a href="dashboard.html" title="Dashboard"><img src="images/icons/dashboard.png" alt="/" />Dashboard</a></li>
+                   <li><a href="forms.html" title="Forms" ><img src="images/icons/form.png" />Transaction</a></li>
+                   <li><a href="elements.html" title="Elements" class="active" ><img src="images/icons/elements.png" alt="/" />Reporting</a></li><!--Add "active" Class for Current Page-->
+                   <li><a href="plugins.html" title="Plugins" ><img src="images/icons/plugins.png" alt="/" />General Ledger</a></li>
+                   <li><a href="notifications.html" title="Notifications" ><img src="images/icons/notification.png" alt="/" />Statpro</a></li>
+                   <li><a href="additional.html" title="Additional Elements" ><img src="images/icons/settings.png" alt="/" />Administrator</a></li>
+               </ul>
+           </div>
+    
+   </div>
+   <!--Header-End-->
+   
+   <div class="clear"></div>
+  
+     <div class="tabs-contenor">
+       
+       <div class="profile">
+         <form action="http://infynitix.com/" target="_blank">
+         <img src="images/user.jpg" alt="User" />
+         <h2>DESIGNER AKSH</h2>
+         <h4>Reportin Website <input type="submit" class="common-button" value="infynitix.com" /></h4>
+         <h4><a href="#">Help</a> . <a href="#">Account</a> . <a href="#">Logout <img src="images/icons/login.jpg" alt="login" /></a></h4>
+         </form>      
+       </div>
+        
+       <h3><a href="#">Dashboard</a> <img src="images/icons/arrow.jpg" /> <a href="#">Level2</a> <img src="images/icons/arrow.jpg" alt="/" /> <a href="#">Level3</a></h3>
+       <h1>UI ELEMENTS</h1>
+       
+       <div class="tabs_links">
+           <ul>
+               <li><a href="#tables">Tables</a></li>
+               <li><a href="#gallery">Gallery</a></li>
+               <li><a href="#miscellaneous">Miscellaneous</a></li>
+               <li><a href="#tabs">Tabs</a></li>
+               <li><a href="#gride">Grid Style</a></li>
+           </ul>
+       </div>
+     </div>
+<!--Tabs-Box-Ends-->
+   
+      
+   
+       <div id="main">                               
+    
+            <div id="right-menu">
+              
+              <div id="scrollbox">
+              
+              <form action="" method="post" id="form-search">
+                <input type="text" class="search" onblur="if(this.value==''){this.value='Search...'}" onfocus="if(this.value=='Search...'){this.value=''}" value="Search..." />
+                <input type="submit" class="search-submit" value=" " />
+	          </form>
+              
+              <div class="clear"></div>
+              
+              <input type="submit" class="common-button advanced-search" value="ADVANCED SEARCH" />
+               
+               <div class="clear"></div>
+               
+               <ul id="main-nav">  <!-- Accordion Menu -->
+				
+				
+				<li>
+                    <img src="images/menu-arrow.png" alt="Arrow" /> 
+					<a href="#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
+					 Pending Tasks (4)
+                    </a>
+ 
+			         <ul style="display: block;">
+						<li><a href="#">You have 75 potential Leads</a></li>
+						<li><a href="#">Submit Report</a></li> <!-- Add class "current" to sub menu items also -->
+						<li><a href="#">Metting 4:30 pm</a></li>
+					 </ul>
+				</li>
+				
+				<li>
+                  <img src="images/menu-arrow.png" alt="Arrow" />
+				  <a style="padding-right: 15px;" href="#" class="nav-top-item current">
+						Todays Mail / Messages
+				  </a>
+                  
+	          <ul style="display: none;">
+						<li><a href="#">Hi, Akshay we are ...</a></li>
+						<li><a href="#">Administration</a></li>
+					</ul>
+				</li>
+				
+				<li>
+                  <img src="images/menu-arrow.png" alt="Arrow" />
+				  <a href="#" class="nav-top-item current">
+						Traffic Sources
+				  </a>
+				  <ul style="display: none;">
+					<li><a href="#">Avg. Time on Site </a></li>
+						<li><a href="#">213 New People <input type="button" class="common-button" value="View All" /></a></li>
+						<li><a href="#">Bounce Rate 87.23%</a></li>
+						<li><a href="#">Demo Submenu</a></li>
+					</ul>
+				</li>
+				
+				<li>
+                    <img src="images/menu-arrow.png" alt="Arrow" />
+					<a href="#" class="nav-top-item">
+						Todays Events 05/09/1990
+					</a>
+					<ul style="display: none;">
+						<li><a href="#">Project Testing</a></li>
+						<li><a href="#">Web Designing</a></li>
+						<li><a href="#">Mobile Applications</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a style="padding-right: 15px;" href="#" class="nav-top-item no-submenu">
+					 Menu without Sub menu
+                    </a>
+				</li>   
+				
+			</ul>
+             <!-- Accordion Menu  END-->
+             
+            </div> 
+             
+         </div>
+            <!-- RIGHT MENU END -->
+       
+       
+            <div id="content">
+            
+               <div class="tab_content" id="tables"  >
+				   
+                  <div class="element-box">
+                  
+                     <h1>Dynamic Data Table</h1>
+                     <p>This is an dynamic data table example it contains : shortable, search, pagination, functionality etc </p>
+                     <br />
+                      
+                     <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+	<thead>
+		<tr>
+			<th>Rendering engine</th>
+			<th>Browser</th>
+			<th>Platform(s)</th>
+			<th>Engine version</th>
+			<th>CSS grade</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 4.0</td>
+			<td>Win 95+</td>
+			<td class="center">4</td>
+			<td class="center">X</td>
+		</tr>
+		<tr>
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 5.0</td>
+			<td>Win 95+</td>
+			<td class="center">5</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 5.5</td>
+			<td>Win 95+</td>
+			<td class="center">5.5</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 6</td>
+			<td>Win 98+</td>
+			<td class="center">6</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Trident</td>
+			<td>Internet Explorer 7</td>
+			<td>Win XP SP2+</td>
+			<td class="center">7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Trident</td>
+			<td>AOL browser (AOL desktop)</td>
+			<td>Win XP</td>
+			<td class="center">6</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Firefox 1.0</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Firefox 1.5</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Firefox 2.0</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Firefox 3.0</td>
+			<td>Win 2k+ / OSX.3+</td>
+			<td class="center">1.9</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Camino 1.0</td>
+			<td>OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Camino 1.5</td>
+			<td>OSX.3+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Netscape 7.2</td>
+			<td>Win 95+ / Mac OS 8.6-9.2</td>
+			<td class="center">1.7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Netscape Browser 8</td>
+			<td>Win 98SE+</td>
+			<td class="center">1.7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Netscape Navigator 9</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.0</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.1</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.1</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.2</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.2</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.3</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.3</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.4</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.4</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.5</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.5</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.6</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">1.6</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.7</td>
+			<td>Win 98+ / OSX.1+</td>
+			<td class="center">1.7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Mozilla 1.8</td>
+			<td>Win 98+ / OSX.1+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Seamonkey 1.1</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Gecko</td>
+			<td>Epiphany 2.20</td>
+			<td>Gnome</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>Safari 1.2</td>
+			<td>OSX.3</td>
+			<td class="center">125.5</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>Safari 1.3</td>
+			<td>OSX.3</td>
+			<td class="center">312.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>Safari 2.0</td>
+			<td>OSX.4+</td>
+			<td class="center">419.3</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>Safari 3.0</td>
+			<td>OSX.4+</td>
+			<td class="center">522.1</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>OmniWeb 5.5</td>
+			<td>OSX.4+</td>
+			<td class="center">420</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>iPod Touch / iPhone</td>
+			<td>iPod</td>
+			<td class="center">420.1</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Webkit</td>
+			<td>S60</td>
+			<td>S60</td>
+			<td class="center">413</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 7.0</td>
+			<td>Win 95+ / OSX.1+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 7.5</td>
+			<td>Win 95+ / OSX.2+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 8.0</td>
+			<td>Win 95+ / OSX.2+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 8.5</td>
+			<td>Win 95+ / OSX.2+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 9.0</td>
+			<td>Win 95+ / OSX.3+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 9.2</td>
+			<td>Win 88+ / OSX.3+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera 9.5</td>
+			<td>Win 88+ / OSX.3+</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Opera for Wii</td>
+			<td>Wii</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Nokia N800</td>
+			<td>N800</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Presto</td>
+			<td>Nintendo DS browser</td>
+			<td>Nintendo DS</td>
+			<td class="center">8.5</td>
+			<td class="center">C/A<sup>1</sup></td>
+		</tr>
+		<tr>
+			<td>KHTML</td>
+			<td>Konqureror 3.1</td>
+			<td>KDE 3.1</td>
+			<td class="center">3.1</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>KHTML</td>
+			<td>Konqureror 3.3</td>
+			<td>KDE 3.3</td>
+			<td class="center">3.3</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>KHTML</td>
+			<td>Konqureror 3.5</td>
+			<td>KDE 3.5</td>
+			<td class="center">3.5</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Tasman</td>
+			<td>Internet Explorer 4.5</td>
+			<td>Mac OS 8-9</td>
+			<td class="center">-</td>
+			<td class="center">X</td>
+		</tr>
+		<tr>
+			<td>Tasman</td>
+			<td>Internet Explorer 5.1</td>
+			<td>Mac OS 7.6-9</td>
+			<td class="center">1</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>Tasman</td>
+			<td>Internet Explorer 5.2</td>
+			<td>Mac OS 8-X</td>
+			<td class="center">1</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>NetFront 3.1</td>
+			<td>Embedded devices</td>
+			<td class="center">-</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>NetFront 3.4</td>
+			<td>Embedded devices</td>
+			<td class="center">-</td>
+			<td class="center">A</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>Dillo 0.8</td>
+			<td>Embedded devices</td>
+			<td class="center">-</td>
+			<td class="center">X</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>Links</td>
+			<td>Text only</td>
+			<td class="center">-</td>
+			<td class="center">X</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>Lynx</td>
+			<td>Text only</td>
+			<td class="center">-</td>
+			<td class="center">X</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>IE Mobile</td>
+			<td>Windows Mobile 6</td>
+			<td class="center">-</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>Misc</td>
+			<td>PSP browser</td>
+			<td>PSP</td>
+			<td class="center">-</td>
+			<td class="center">C</td>
+		</tr>
+		<tr>
+			<td>Other browsers</td>
+			<td>All others</td>
+			<td>-</td>
+			<td class="center">-</td>
+			<td class="center">U</td>
+		</tr>
+	</tbody>
+</table>
+
+                     <hr />
+                     <div class="clear"></div>
+                     <h1>Simple Data Table</h1>
+                     <p>This is an dynamic data table example it contains : shortable, search, pagination, functionality etc </p>
+                     <br />
+                     <div id="example_wrapper">
+                     <table cellpadding="0" cellspacing="0" border="0" class="display simple-table" >
+	<thead>
+		<tr>
+			<th>Rendering engine</th>
+			<th>Browser</th>
+			<th>Platform(s)</th>
+			<th>Engine version</th>
+			<th>CSS grade</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd" >
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 4.0</td>
+			<td>Win 95+</td>
+			<td class="center">4</td>
+			<td class="center">X</td>
+		</tr>
+		<tr class="even">
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 5.0</td>
+			<td>Win 95+</td>
+			<td class="center">5</td>
+			<td class="center">C</td>
+		</tr>
+		<tr class="odd">
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 5.5</td>
+			<td>Win 95+</td>
+			<td class="center">5.5</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="even">
+			<td>Trident</td>
+			<td>Internet
+				 Explorer 6</td>
+			<td>Win 98+</td>
+			<td class="center">6</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="odd">
+			<td>Trident</td>
+			<td>Internet Explorer 7</td>
+			<td>Win XP SP2+</td>
+			<td class="center">7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="even">
+			<td>Trident</td>
+			<td>AOL browser</td>
+			<td>Win XP</td>
+			<td class="center">6</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="odd">
+			<td>Gecko</td>
+			<td>Firefox 1.0</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.7</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="even">
+			<td>Gecko</td>
+			<td>Firefox 1.5</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="odd">
+			<td>Gecko</td>
+			<td>Firefox 2.0</td>
+			<td>Win 98+ / OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="even">
+			<td>Gecko</td>
+			<td>Firefox 3.0</td>
+			<td>Win 2k+ / OSX.3+</td>
+			<td class="center">1.9</td>
+			<td class="center">A</td>
+		</tr>
+		<tr class="odd">
+			<td>Gecko</td>
+			<td>Camino 1.0</td>
+			<td>OSX.2+</td>
+			<td class="center">1.8</td>
+			<td class="center">A</td>
+		</tr>
+	</tbody>
+</table>
+                     <div class="ui-widget-header ui-corner-bl ui-corner-br simple-table-footer"><div class="dataTables_info" id="example_info">
+                     Showing total "eleven (11) " entries
+                     </div></div>
+                     </div> 
+                                      
+                  </div>
+                  <!--ELEMENT BOXE TAB ENDS-->
+                 
+                  
+               </div>
+               <!--TABLES BOXES TAB ENDS-->
+               
+               
+               
+               
+               
+               
+			   
+			   <div class="tab_content" id="gallery" >
+                  
+                  <div class="element-box">
+                  
+                    <h1>Image Light Box Gallery</h1>
+                    <p>Image Lightbox is a simple, unobtrusive script used to overlay images on the current page. It's a snap to setup and works on all browsers.</p>
+                    <br />
+                    <ul class="imglist">
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7042/6974493657_90384ac1a3_b.jpg" class="modal" rel="gallery" title="Summer boat">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7207/6986393971_731ab0634d_z.jpg" class="modal" rel="gallery" title="Sozopol bay">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7054/6920238194_23de3c19e0.jpg" class="modal" rel="gallery" title="Stones">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7152/6477087555_c2c678939b_b.jpg" class="modal" rel="gallery" title="Gate">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+
+					<li class="view"><a href="http://farm8.staticflickr.com/7042/6974493657_90384ac1a3_b.jpg" class="modal" rel="gallery" title="Summer boat">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7207/6986393971_731ab0634d_z.jpg" class="modal" rel="gallery" title="Sozopol bay">View</a></li>
+
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7054/6920238194_23de3c19e0.jpg" class="modal" rel="gallery" title="Stones">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7152/6477087555_c2c678939b_b.jpg" class="modal" rel="gallery" title="Gate">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7042/6974493657_90384ac1a3_b.jpg" class="modal" rel="gallery" title="Summer boat">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7207/6986393971_731ab0634d_z.jpg" class="modal" rel="gallery" title="Sozopol bay">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7054/6920238194_23de3c19e0.jpg" class="modal" rel="gallery" title="Stones">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7152/6477087555_c2c678939b_b.jpg" class="modal" rel="gallery" title="Gate">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+
+					<li class="view"><a href="http://farm8.staticflickr.com/7042/6974493657_90384ac1a3_b.jpg" class="modal" rel="gallery" title="Summer boat">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7207/6986393971_731ab0634d_z.jpg" class="modal" rel="gallery" title="Sozopol bay">View</a></li>
+
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7054/6920238194_23de3c19e0.jpg" class="modal" rel="gallery" title="Stones">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://farm8.staticflickr.com/7152/6477087555_c2c678939b_b.jpg" class="modal" rel="gallery" title="Gate">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+		</ul>
+        
+                    <hr />
+                    <div class="clear"></div>
+                    <h1>Video Light Box Gallery</h1>
+                    <p>Video Lightbox is a simple, unobtrusive script used to overlay images on the current page. It's a snap to setup and works on all browsers.</p>
+                    <br />
+                    <ul class="imglist">
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb1.jpg" alt="" />
+				<ul>
+
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb2.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb3.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<img src="images/thumb4.jpg" alt="" />
+				<ul>
+					<li class="view"><a href="http://s.ytimg.com/yt/swfbin/watch_as3-vflJs-cKN.swf" class="modal" rel="gallery" title="Video Player">View</a></li>
+					<li class="delete"><a href="#">Delete</a></li>
+				</ul>
+			</li>
+		</ul>
+        
+                  </div>
+                 
+			   </div>
+               <!--GALLERY TAB-->
+               
+               
+               
+               
+               
+               
+               <div id="miscellaneous" class="tab_content">
+                  
+       <div class="element-box">      
+            
+           <h1>Horizontal Slider</h1>
+           <p>Horizontal slider, grag the pointer or click on the pointer and move it through keybord arrow buttons. to show the value of slider use input text with #ammount ID for more information view custom.js</p>
+            
+		   <br />
+           <div id="slider-horizontal-1"></div>
+           <div style="clear:both;"></div>	  
+           <div id="slider-range1"></div>
+           <div style="clear:both;"></div>	
+           <div id="slider-horizontal-2"></div>
+           <div style="clear:both;"></div>		
+	       <div id="slider-range2"></div>
+           <div style="clear:both;"></div>
+           
+           <hr>
+ 
+           <div class="clear"></div>
+           <h1>Vertical Slider</h1>
+           <p>Vertical slider, grag the pointer or click on the pointer and move it through keybord arrow buttons. to show the value of slider use input text with #ammount ID for more information view custom.js</p>
+            
+		   <br />
+           
+           <div id="slider-vertical-1"></div>
+	       <div id="slider-vertical-2"></div>
+           <div id="slider-vertical-3"></div>
+           <div id="slider-vertical-4"></div>
+           <div id="slider-vertical-5"></div>
+           <div id="slider-vertical-6"></div>
+           <div id="slider-vertical-7"></div>
+           <div id="slider-vertical-8"></div>
+           
+           <hr>
+ 
+           <div class="clear"></div>
+           <h1>Ajax Loader</h1>
+           <p>Ajax loaders use these images as per your requirement</p>
+           
+                 <div class="content-box full-box">
+				        <div class="content-box-header">
+					    <h4>Ajax loaders images</h4>
+				        </div> <!-- End .content-box-header -->
+				
+				        <div class="content-box-content">
+					       <img alt="Loader" class="loader" src="./images/loaders/circle.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/facebook.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/roller.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/snake.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/indicator.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/indicator-lite.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/indicator-big.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/wheel-throbber.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/big-roller.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/squares-circle.gif">
+					       <img alt="Loader" class="loader" src="./images/loaders/squares.gif">
+                        </div>
+				   </div>
+                   
+           <hr />
+           
+           <div class="clear"></div>
+           <h1>Color Picker</h1>
+           <p>A miniature color selector for input elements. </p>	
+           
+           Select color : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="color1" class="color-picker input-text" size="6" autocomplete="on" maxlength="10" />
+           
+           
+           <hr />
+           
+           <div class="clear"></div>
+           <h1>Processing Bars</h1>
+           <p>Percent ProcessBar you can control the width from custom.js</p>
+           <br />
+           <div class="process-bars-box">
+              <div class="process-bar-cover"><div class="process-bar-blue" id="p-bar1"></div></div>
+              <br /><br />
+              <div class="process-bar-cover"><div class="process-bar-blue" id="p-bar2"></div></div>
+              <br /><br />
+              <div class="process-bar-cover"><div class="process-bar-darkblue" id="p-bar3"></div></div>
+           </div>
+           
+	  </div>
+	  
+	</div>
+               <!--miscellaneous ends-->
+               
+               
+               
+               
+               
+               
+			   <div class="tab_content" id="gride" >
+               
+                 <div class="element-box">
+                 
+                    <h1>Content Grid</h1>
+                    <p>You can very well use the 960 grid system if you'd like.</p>
+                    
+                    <div class="content-box">
+				        <div class="content-box-header">
+					    <h4>Full width !</h4>
+				        </div> <!-- End .content-box-header -->
+				
+				        <div class="content-box-content">
+					    <h4>Infynitix IT consulting</h4>
+					    <p>Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.  Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world.</p>
+                        </div> <!-- End .content-box-content -->
+				   </div>
+                   
+            <div class="clear"></div>
+                   
+                   <div class="content-box half-box">
+				     <div class="content-box-header">
+					    <h4>Half width !</h4>
+				     </div> <!-- End .content-box-header -->
+				      <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.</p>
+                    </div> <!-- End .content-box-content -->
+				   </div>
+                   
+                   <div class="content-box half-box right">
+				     <div class="content-box-header">
+					    <h4>Half width !</h4>
+				     </div> <!-- End .content-box-header -->
+				      <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.</p>
+                    </div> <!-- End .content-box-content -->
+				   </div>
+                   
+            <div class="clear"></div>
+            
+                   <div class="content-box quater-box margin-right">
+				     <div class="content-box-header">
+					    <h4>One third width !</h4>
+				     </div> <!-- End .content-box-header -->
+				      <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Infynitix is a global IT consulting, technology services company and outsourcing company.</p>
+                    </div> <!-- End .content-box-content -->
+				   </div>
+                   
+                   <div class="content-box quater-box margin-right">
+				     <div class="content-box-header">
+					    <h4>One third width !</h4>
+				     </div> <!-- End .content-box-header -->
+				      <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Infynitix is a global IT consulting, technology services company and outsourcing company.</p>
+                    </div> <!-- End .content-box-content -->
+				   </div>
+                   
+                   <div class="content-box quater-box right">
+				     <div class="content-box-header">
+					    <h4>One third width !</h4>
+				     </div> <!-- End .content-box-header -->
+				      <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Infynitix is a global IT consulting, technology services company and outsourcing company.</p>
+                    </div> <!-- End .content-box-content -->
+				   </div>
+                   
+            
+            
+                   
+                    
+                 </div>
+                 <!--ELEMENT BOX ENDS-->
+                 
+			   </div>
+               <!--GRIDE TAB ENDS-->
+               
+               
+               
+               
+               
+               
+			   <div class="tab_content" id="tabs" >
+               
+                 <div class="element-box">
+                 
+                    <h1>Horizontal Tabs</h1>
+                    <p>Tab key (abbreviation of tabulator key[1] or tabular key[2]) on a keyboard is used to advance the cursor to the next tab stop.</p>
+                    <br />
+                    
+                    <div class="horizontal-tabs">
+                         <ul>
+                             <li><a href="#one"> First Menu Link</a></li>
+                             <li><a href="#two"> Second Menu Link</a></li>
+                             <li><a href="#three"> Third Menu Link</a></li>
+                             <li><a href="#four"> Fourth Menu Link</a></li>
+                             <li><a href="#five"> Fifth Menu Link</a></li>
+                         </ul> 
+                         
+                         <div class="horizontal-tab-content" id="one">
+                          <h2>First Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world.              </div>
+                         
+                         <div class="horizontal-tab-content" id="two">
+                          <h2>Second Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world.             </div>
+
+                        <div class="horizontal-tab-content" id="three">
+                          <h2>Third Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world.             </div>
+
+                        <div class="horizontal-tab-content" id="four">
+                          <h2>Fourth Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world.             </div>
+
+                        <div class="horizontal-tab-content" id="five">
+                          <h2>Fifth Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world.             </div>
+                       
+                    </div>
+                    
+                    <hr />
+                    <div class="clear"></div>
+                    <h1>Vertical Tabs</h1>
+                    <p>Tab key (abbreviation of tabulator key[1] or tabular key[2]) on a keyboard is used to advance the cursor to the next tab stop.</p>
+                    <br />
+                    <div class="vertical-tabs">
+                            <ul>
+                             <li><a href="#vone"> First Menu Link</a></li>
+                             <li><a href="#vtwo"> Second Menu Link</a></li>
+                             <li><a href="#vthree"> Third Menu Link</a></li>
+                             <li><a href="#vfour"> Fourth Menu Link</a></li>
+                             <li><a href="#vfive"> Fifth Menu Link</a></li>
+                            </ul>
+                            
+                          <div class="vertical-tab-content" id="vone">
+                          <h2>First Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world. Infynitix is a global IT consulting, technology services company and outsourcing company.
+                         </div> 
+                         
+                         <div class="vertical-tab-content" id="vtwo">
+                          <h2>Second Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world. Infynitix is a global IT consulting, technology services company and outsourcing company.
+                         </div>
+                         
+                         <div class="vertical-tab-content" id="vthree">
+                          <h2>Third Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world. Infynitix is a global IT consulting, technology services company and outsourcing company.
+                         </div>
+                         
+                         <div class="vertical-tab-content" id="vfour">
+                          <h2>Fourth Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world. Infynitix is a global IT consulting, technology services company and outsourcing company.
+                         </div>
+                         
+                         <div class="vertical-tab-content" id="vfive">
+                          <h2>Fifth Tabs Contenor</h2><br />
+                          Infynitix is a global IT consulting, technology services company and outsourcing company. Bringing together vast experience, comprehensive capabilities across all IT functions and extensive research in IT domains, Infynitix works with clients to help them become top- notch businesses.<br /><br /><br />
+Our strength builds on our extensive industry expertise in IT consulting, technology and outsourcing. We help our clients to perform at the highest levels in order to create sustainable value for all their stakeholders. Leveraging on our expert domain knowledge, R&D expertise and technology capabilities, we create solutions to help our clients across the world. Infynitix is a global IT consulting, technology services company and outsourcing company.
+                         </div>
+                         
+                    </div>
+                    
+                  </div>
+                  <!--ELEMENT BOX ENDS-->
+                 
+			   </div>
+               <!--HORIZONTAL TABS TAB-->
+               
+               
+               
+             
+             
+               
+            </div>
+            <!--CONTENT-END-->
+         
+         
+         
+         
+         
+        </div>
+        <!--MAIN-END--> 
+        
+        <div id="footer">
+          COPYRIGHT &copy; ETERNITY ADMIN | ALL RIGHTS RESERVED
+          <span>
+          <a href="#">Help</a> &sdot; 
+          <a href="#">Account Options</a> &sdot;
+          <a href="#">Log out <img src="images/icons/logout.png" alt="/" /></a> &sdot; 
+          <a href="#">Email Us</a> &sdot;
+          <a href="#">About Eternity</a> &sdot;
+          <a href="#">Privacy Policy</a> &sdot;
+          <a href="#">Terms Of Use</a> &sdot;
+          <b>192.68.34.101</b>
+          </span>
+        </div>                              
+
+</body>
+</html>

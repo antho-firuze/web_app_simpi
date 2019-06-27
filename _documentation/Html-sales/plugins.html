@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Plugins | Eternity Admin Theme | Template</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="description" content="This template is the perfect way to design a website with hundreds of possible features and plugins required while designing/developing a Website. It gives you different layouts and plugins to design a dashboard or a webform. Based on Jquery, the interface is light,responsive and ready to use. Eternity Admin provides custom layouts, error pages and themes to be used with your website. One of the main features of Eternity Admin is that it is compatible with all browsers. With more than 100 different buttons styles and grid layouts, this template becomes even more powerful." />
+
+<meta name="keywords" content="dashboard, template, admin, theme, website, free, layout, web, responsive" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css"  />
+
+<link href="css/wysiwyg.css" rel="stylesheet" type="text/css"  />
+
+<link rel="stylesheet" href="css/elfinder.css" type="text/css" >
+<link rel="stylesheet" href="css/smoothness/jquery-ui-1.8.13.custom.css" type="text/css">
+
+<link rel='stylesheet' type='text/css' href='css/fullcalendar.css' />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript" src="js/charts/jsapi"></script>
+<script type="text/javascript" src="js/charts/area-chart.js"></script>
+<script type="text/javascript" src="js/charts/bar-chart.js"></script>
+<script type="text/javascript" src="js/charts/pie-chart.js"></script>
+
+
+<script type="text/javascript" src="js/slidernav.js"></script>
+
+<script type="text/javascript" src="js/vertlib.min.js"></script><!-- Right Menu Fixed Scroll-->
+<script type="text/javascript" src="js/StickyScroller.min.js"></script><!-- Right Menu Fixed Scroll-->
+
+
+<script src="js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="js/elfinder.min.js" type="text/javascript" charset="utf-8"></script>
+<!--
+<script src="js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>
+-->
+
+<script type='text/javascript' src='js/fullcalendar.min.js'></script>	
+</head>
+
+<body>
+ 
+   <div class="header">
+    
+           <div id="logo"><img src="images/logo.png" alt="/" /></div>
+           
+           <div class="top-nav">
+               <ul>
+                   <li><a href="dashboard.html" title="Dashboard"><img src="images/icons/dashboard.png" alt="/" />Dashboard</a></li>
+                   <li><a href="forms.html" title="Forms" ><img src="images/icons/form.png" alt="/" />Transaction</a></li>
+                   <li><a href="elements.html" title="Elements" ><img src="images/icons/elements.png" alt="/" />Reporting</a></li><!--Add "active" Class for Current Page-->
+                   <li><a href="plugins.html" title="Plugins" class="active" ><img src="images/icons/plugins.png" alt="/" />Genetal Ledger</a></li>
+                   <li><a href="notifications.html" title="Notifications" ><img src="images/icons/notification.png" alt="/" />Statpro</a></li>
+                   <li><a href="additional.html" title="Additional Elements" ><img src="images/icons/settings.png" alt="/" />Administrator</a></li>
+               </ul>
+           </div>
+    
+   </div>
+   <!--Header-End-->
+   
+   <div class="clear"></div>
+  
+     <div class="tabs-contenor">
+       
+       <div class="profile">
+         <form action="http://infynitix.com/" target="_blank">
+         <img src="images/user.jpg" alt="User" />
+         <h2>DESIGNER AKSH</h2>
+         <h4>Reportin Website <input type="submit" class="common-button" value="infynitix.com" /></h4>
+         <h4><a href="#">Help</a> . <a href="#">Account</a> . <a href="#">Logout <img src="images/icons/login.jpg" alt="login" /></a></h4>
+         </form>      
+       </div>
+        
+       <h3><a href="#">Dashboard</a> <img src="images/icons/arrow.jpg" /> <a href="#">Level2</a> <img src="images/icons/arrow.jpg" alt="/" /> <a href="#">Level3</a></h3>
+       <h1>PLUGINS</h1>
+       
+       <div class="tabs_links">
+           <ul>
+               <li><a href="#charts">Charts</a></li>
+               <li><a href="#full-calendar">Calendar</a></li>
+               <li><a href="#file-maneger">File Explorer</a></li>
+               <li><a href="#contactlist">Contact List</a></li>
+               <li><a href="#html5-player">HTML 5 Player</a></li>
+           </ul>
+       </div>
+     </div>
+<!--Tabs-Box-Ends-->
+   
+      
+   
+       <div id="main">                               
+    
+            <div id="right-menu">
+              
+              <div id="scrollbox">
+              
+              <form action="" method="post" id="form-search">
+                <input type="text" class="search" onblur="if(this.value==''){this.value='Search...'}" onfocus="if(this.value=='Search...'){this.value=''}" value="Search..." />
+                <input type="submit" class="search-submit" value=" " />
+	          </form>
+              
+              <div class="clear"></div>
+              
+              <input type="submit" class="common-button advanced-search" value="ADVANCED SEARCH" />
+               
+               <div class="clear"></div>
+               
+               <ul id="main-nav">  <!-- Accordion Menu -->
+				
+				
+				<li>
+                    <img src="images/menu-arrow.png" alt="Arrow" /> 
+					<a href="#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
+					 Pending Tasks (4)
+                    </a>
+ 
+			         <ul style="display: block;">
+						<li><a href="#">You have 75 potential Leads</a></li>
+						<li><a href="#">Submit Report</a></li> <!-- Add class "current" to sub menu items also -->
+						<li><a href="#">Metting 4:30 pm</a></li>
+					 </ul>
+				</li>
+				
+				<li>
+                  <img src="images/menu-arrow.png" alt="Arrow" />
+				  <a style="padding-right: 15px;" href="#" class="nav-top-item current">
+						Todays Mail / Messages
+				  </a>
+                  
+	          <ul style="display: none;">
+						<li><a href="#">Hi, Akshay we are ...</a></li>
+						<li><a href="#">Administration</a></li>
+					</ul>
+				</li>
+				
+				<li>
+                  <img src="images/menu-arrow.png" alt="Arrow" />
+				  <a href="#" class="nav-top-item current">
+						Traffic Sources
+				  </a>
+				  <ul style="display: none;">
+					<li><a href="#">Avg. Time on Site </a></li>
+						<li><a href="#">213 New People <input type="button" class="common-button" value="View All" /></a></li>
+						<li><a href="#">Bounce Rate 87.23%</a></li>
+						<li><a href="#">Demo Submenu</a></li>
+					</ul>
+				</li>
+				
+				<li>
+                    <img src="images/menu-arrow.png" alt="Arrow" />
+					<a href="#" class="nav-top-item">
+						Todays Events 05/09/1990
+					</a>
+					<ul style="display: none;">
+						<li><a href="#">Project Testing</a></li>
+						<li><a href="#">Web Designing</a></li>
+						<li><a href="#">Mobile Applications</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a style="padding-right: 15px;" href="#" class="nav-top-item no-submenu">
+					 Menu without Sub menu
+                    </a>
+				</li>   
+				
+			</ul>
+             <!-- Accordion Menu  END-->
+             
+            </div> 
+             
+         </div>
+            <!-- RIGHT MENU END -->
+       
+       
+            <div id="content">
+            
+            
+               <div class="tab_content" id="charts"  >
+				   
+                   <div class="element-box">
+                  
+                      <h1>Area Chart Example</h1>
+                      <p>This is an example of area chart, very easy to use</p>
+                      <div id="area-chart"></div>
+                      <hr />
+                      <div class="clear"></div>
+                      
+                      <br />
+                      <h1>Bars Chart Example</h1>
+                      <p>This is an example of bars chart, very easy to use</p>
+                      <div id="bars-chart"></div>
+                      
+                      <hr />
+                      <div class="clear"></div>
+                      <br />
+                      <h1>Pie Chart Example</h1>
+                      <p>This is an example of Pie chart, very easy to use</p>
+                     
+                      <div id="pie-chart"></div>
+                     
+                  </div>
+
+                  
+               </div>
+               <!--CHARTS TAB ENDS-->
+               
+               
+               
+			   
+			   <div class="tab_content" id="full-calendar" >
+               
+                 <div class="element-box">
+                 
+                   <h1>Calender</h1>
+                   <p>This is an example of area chart, very easy to use</p>
+                   <br/>
+                   <div id="calendar"></div>
+                 </div>
+                 
+			   </div>
+               <!--CALENDAR END TAB-->
+               
+               
+               
+               
+			   <div class="tab_content" id="file-maneger" >
+               
+                 <div class="element-box">
+                 
+                   <h1>File Manager</h1>
+                   <p>File Maneger is an open-source file manager for web, written in JavaScript using jQuery UI. As you can see its creation is inspired by simplicity and convenience of Finder program used in Mac OS X operating system.</p>
+                   <br />
+                   <div id="finder">finder</div>
+                     
+                 </div>
+                 
+			   </div>
+               <!--FILE MANEGER TAB ENDS-->
+               
+               
+               
+               
+               
+			   <div class="tab_content" id="contactlist" >
+                  
+                 <div class="element-box">
+                 
+                   <h1>Contact List</h1>
+                   
+                   <p>This is an example of area chart, very easy to use</p>  
+                   
+                   <div id="slider">
+	<div class="slider-content">
+		<ul>
+			<li id="a"><a name="a" class="title">A</a>
+				<ul>
+					<li><a href="/">Adam</a></li>
+					<li><a href="/">Alex</a></li>
+					<li><a href="/">Ali</a></li>
+					<li><a href="/">Apple</a></li>
+					<li><a href="/">Arthur</a></li>
+					<li><a href="/">Ashley</a></li>
+				</ul>
+			</li>
+			<li id="b"><a name="b" class="title">B</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="c"><a name="c" class="title">c</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="d"><a name="d" class="title">d</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="e"><a name="e" class="title">E</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="f"><a name="f" class="title">f</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="g"><a name="g" class="title">g</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="h"><a name="h" class="title">h</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="i"><a name="i" class="title">i</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="j"><a name="j" class="title">j</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="k"><a name="k" class="title">k</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="l"><a name="l" class="title">l</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="m"><a name="m" class="title">m</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="n"><a name="n" class="title">n</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="o"><a name="o" class="title">o</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="p"><a name="p" class="title">p</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="q"><a name="q" class="title">q</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="r"><a name="r" class="title">r</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="s"><a name="s" class="title">s</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="t"><a name="t" class="title">t</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="u"><a name="u" class="title">u</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="v"><a name="v" class="title">v</a>
+				<ul>
+					<li><a href="/">Barry</a></li>
+					<li><a href="/">Becky</a></li>
+					<li><a href="/">Biff</a></li>
+					<li><a href="/">Billy</a></li>
+					<li><a href="/">Bozarking</a></li>
+					<li><a href="/">Bryan</a></li>
+				</ul>
+			</li>
+			<li id="w"><a name="w" class="title">w</a>
+				<ul>
+					<li><a href="/">Calista</a></li>
+					<li><a href="/">Cathy</a></li>
+					<li><a href="/">Chris</a></li>
+					<li><a href="/">Cinderella</a></li>
+					<li><a href="/">Corky</a></li>
+					<li><a href="/">Cypher</a></li>
+				</ul>
+			</li>
+			<li id="x"><a name="x" class="title">x</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="y"><a name="y" class="title">y</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+			<li id="z"><a name="z" class="title">z</a>
+				<ul>
+					<li><a href="/">damien</a></li>
+					<li><a href="/">danny</a></li>
+					<li><a href="/">denver</a></li>
+					<li><a href="/">devon</a></li>
+					<li><a href="/">doug</a></li>
+					<li><a href="/">dustin</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+                 
+                 </div>
+			   </div>
+               <!--CONTACT LIST TAB-->
+               
+               
+               
+               
+               
+			   <div class="tab_content" id="html5-player" >
+               
+                 <div class="element-box">
+                 
+                   <h1>HTML 5 Video Player</h1>
+                   <p>The &lt; video &gt; tag specifies video, such as a movie clip or other video streams.</p> 
+                   <br />
+                   <video class="video-player" controls="controls">
+                   <source src="movie.mp4" type="video/mp4" />
+                   <source src="movie.ogg" type="video/ogg" />
+                   Your browser does not support the video tag.
+                   </video>
+                   
+                   <hr />
+                   <div class="clear"></div>
+                   <h1>HTML 5 Audio Player</h1>
+                   <p>The control attribute adds audio controls, like play, pause, and volume.</p>
+                   
+                   <audio controls="controls" class="audio-player">
+                   <source src="song.ogg" type="audio/ogg" />
+                   <source src="song.mp3" type="audio/mpeg" />
+                   Your browser does not support the audio element.
+                   </audio>
+                    
+                 </div>
+                 
+			   </div>
+               <!--HTML 5 PLYERS TAB ENDS-->
+               
+               
+             
+               
+            </div>
+            <!--CONTENT-END-->
+         
+         
+         
+         
+         
+        </div>
+        <!--MAIN--END--> 
+        
+        <div id="footer">
+          COPYRIGHT &copy; ETERNITY ADMIN | ALL RIGHTS RESERVED
+          <span>
+          <a href="#">Help</a> &sdot; 
+          <a href="#">Account Options</a> &sdot;
+          <a href="#">Log out <img src="images/icons/logout.png" alt="/" /></a> &sdot; 
+          <a href="#">Email Us</a> &sdot;
+          <a href="#">About Eternity</a> &sdot;
+          <a href="#">Privacy Policy</a> &sdot;
+          <a href="#">Terms Of Use</a> &sdot;
+          <b>192.68.34.101</b>
+          </span>
+        </div>                              
+
+</body>
+</html>

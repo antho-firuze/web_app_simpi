@@ -1,0 +1,6 @@
+bg_splash: 720 x 1200
+logo_splash: 512~720 x 512
+logo_login: 512~720 x 512
+icon_launcher: 192 x 192
+slider: 480~720 x 265
+portfolio: 250 x 100

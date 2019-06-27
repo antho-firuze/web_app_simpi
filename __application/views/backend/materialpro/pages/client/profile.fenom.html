@@ -1,0 +1,397 @@
+<div class="row m-t-5">
+	<!-- Column -->
+	<div class="col-lg-12">
+		<div class="card">
+			<!-- <div class="card-title col-lg-6" style="border-bottom: 2px solid #000000; color:black; background:#ffffff">
+				<h3 class="portfolio_name" style="margin-top:15px;">{$language.title}</h3>
+				<small>Mandatory fields (<span id="profile_status">0%</span>)</small>
+			</div>
+			<div class="card-title col-lg-6">
+				<button type="submit" id="btn_print" class="btn btn-success waves-effect waves-light m-r-10">SIMPAN & PRINT</button>
+				<button type="submit" id="btn_email" class="btn btn-success waves-effect waves-light m-r-10">SIMPAN & EMAIL</button>
+			</div> -->
+			<div class="card-title" style="border-bottom: 2px solid #000000; color:black; background:#ffffff">
+				<div class="row">
+					<div class="col-lg-6">
+						<h3 class="portfolio_name" style="margin-top:15px;margin-left:15px;">{$language.title}</h3>
+						<small style="margin-left:15px;">Mandatory fields (<span id="profile_status">0%</span>)</small>
+					</div>
+					<div class="col-lg-6">
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<form id="profileform" class="form-material ">
+					<!-- <form id="profileform" class="floating-labels"> -->
+					<!-- Nav tabs -->
+					<!-- <ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item"> <a class="nav-link " data-toggle="tab" href="#home" role="tab"><span class="hidden-sm-up"><i
+									 class="ti-home"></i></span> <span class="hidden-xs-down">Home</span></a> </li>
+						<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#profilex" role="tab"><span class="hidden-sm-up"><i
+									 class="ti-user"></i></span> <span class="hidden-xs-down">Profile</span></a> </li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages" role="tab"><span class="hidden-sm-up"><i
+									 class="ti-email"></i></span> <span class="hidden-xs-down">Messages</span></a> </li>
+					</ul> -->
+					<!-- Tab panes -->
+					<!-- <div class="tab-content tabcontent-border">
+						<div class="tab-pane " id="home" role="tabpanel">
+							<div class="p-20">
+								<h3>Best Clean Tab ever</h3>
+								<h4>you can use it with the small code</h4>
+								<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+							</div>
+						</div>
+						<div class="tab-pane active" id="profilex" role="tabpanel">
+							<div class="p-20">
+								<h3>Best Clean Tab two</h3>
+								<h4>you can use it with the small code</h4>
+								<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+							</div>
+						</div>
+						<div class="tab-pane" id="messages" role="tabpanel">
+							<div class="p-20">
+								<h3>Best Clean Tab three</h3>
+								<h4>you can use it with the small code</h4>
+								<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+							</div>
+						</div>
+					</div> -->
+					
+					<div class="row">
+						<div class="col-xl-4 col-sm-12">
+							<div class="form-group">
+								<label>NAMA DEPAN</label>
+								<input type="text" name="NameFirst" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4 col-sm-12">
+							<div class="form-group">
+								<label>NAMA TENGAH</label>
+								<input type="text" name="NameMiddle" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4 col-sm-12">
+							<div class="form-group">
+								<label>NAMA BELAKANG</label>
+								<input type="text" name="NameLast" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>GELAR DEPAN</label>
+								<input type="text" name="TitleFirst" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>GELAR BELAKANG</label>
+								<input type="text" name="TitleLast" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label>PENDIDIKAN TERAKHIR</label>
+								<select type="text" name="LevelID" required class="form-control selection" data-method="master.educationlevel"
+								 data-key="LevelID" data-val="LevelCode" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>JENIS KELAMIN</label>
+								<select name="Gender" required class="form-control">
+									<option value='M'>Male</option>
+									<option value='F'>Female</option>
+								</select>
+								<!-- <input type="text" name="Gender" required class="form-control selection" data-method="master.gender" placeholder=""> -->
+							</div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>KEWARGANEGARAAN</label>
+								<select type="text" name="NationalityID" required class="form-control selection" data-method="master.country"
+								 data-key="CountryID" data-val="Nationality" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>NEGARA KELAHIRAN</label>
+								<select type="text" name="CountryOfBirth" class="form-control selection" data-method="master.country" data-key="CountryID"
+								 data-val="Nationality" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>TEMPAT LAHIR</label>
+								<input type="text" name="BirthPlace" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>TANGGAL LAHIR</label>
+								<input type="text" name="BirthDate" required data-mask="99-99-9999" class="form-control date" placeholder="">
+							</div>
+						</div>
+						<!-- <div class="col-xl-4">
+							<div class="form-group">
+								<label>JENIS IDENTITAS</label>
+								<select type="text" name="IDCardTypeID" required class="form-control selection" data-method="master.idcardtype"
+								 data-key="TypeID" data-val="TypeCode" placeholder=""></select> </div>
+						</div> -->
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>NO KARTU IDENTITAS</label>
+								<input type="text" name="IDCardNo" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>BATAS BERLAKU IDENTITAS</label>
+								<input type="text" name="IDCardExpired" data-mask="99-99-9999" class="form-control date" placeholder="">
+							</div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>AGAMA</label>
+								<select type="text" name="ReligionID" required class="form-control selection" data-method="master.religion"
+								 data-key="ReligionID" data-val="ReligionCode" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>NPWP</label>
+								<input type="text" name="TaxID" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>STATUS PERNIKAHAN</label>
+								<select type="text" name="MaritalStatusID" required class="form-control selection" data-method="master.maritalstatus"
+								 data-key="StatusID" data-val="StatusCode" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>NAMA PASANGAN</label>
+								<input type="text" name="SpouseName" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>MOTHERS MAIDEN NAME</label>
+								<input type="text" name="MothersMaidenName" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>RISK LEVEL</label>
+								<select type="text" name="RiskID" class="form-control selection" data-method="master.risk" data-key="RiskID"
+								 data-val="RiskCode" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>INCOME LEVEL</label>
+								<select type="text" name="IncomeLevel" required class="form-control selection" data-method="master.kyc_incomelevel"
+								 data-key="AnswerID" data-val="AnswerText" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>INVESTMENT OBJECTIVE</label>
+								<select type="text" name="InvestmentObjective" required class="form-control selection" data-method="master.kyc_InvestmentObjective"
+								 data-key="AnswerID" data-val="AnswerText" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>SOURCE OF FUND</label>
+								<select type="text" name="SourceofFund" required class="form-control selection" data-method="master.kyc_SourceOfFund"
+								 data-key="AnswerID" data-val="AnswerText" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>ASSET OWNER</label>
+								<select name="AssetOwner" class="form-control">
+									<option value='1'>MySelf</option>
+									<option value='2'>Representing Other Party</option>
+								</select>
+								<!-- <input type="text" name="Gender" required class="form-control selection" data-method="master.gender" placeholder=""> -->
+							</div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>KTP ADDRESS</label>
+								<input type="text" name="KTPAddress" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>KTP CITY</label>
+								<input type="text" name="KTPCityCode" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>KTP POSTAL CODE</label>
+								<input type="text" name="KTPPostalCode" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>FATCA Status</label>
+								<select type="text" name="FATCAStatus" class="form-control selection" data-method="master.kyc_fatca" data-key="AnswerID"
+								 data-val="AnswerText" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>TIN</label>
+								<input type="text" name="TIN" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-6 col-sm-12">
+							<div class="form-group">
+								<label>TIN COUNTRY</label>
+								<select type="text" name="TINCountry" class="form-control selection" data-method="master.country" data-key="CountryID"
+								 data-val="Nationality" placeholder=""></select> </div>
+						</div>
+					</div>
+
+					<h3 class="portfolio_name" style="margin-top:15px;">ALAMAT LENGKAP SESUAI IDENTITAS</h3>
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label>ALAMAT SESUAI IDENTITAS</label>
+								<input type="text" name="DomicileAddress" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>KOTA</label>
+								<input type="text" name="DomicileCityCode" class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>KODE POS</label>
+								<input type="text" name="DomicilePostalCode" class="form-control" data-mask="99999" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>NEGARA</label>
+								<select type="text" name="DomicileCountry" class="form-control selection" data-method="master.country" data-key="CountryID"
+								 data-val="Nationality" placeholder=""></select> </div>
+						</div>
+					</div>
+					<h3 class="portfolio_name" style="margin-top:15px;">ALAMAT SURAT MENYURAT</h3>
+					<!-- <div class="form-group">
+										<input type="checkbox" id="cb_same_address" class="filled-in">
+										<label for="cb_same_address">CEK UNTUK MENYALIN ALAMAT SURAT MENYURAT SAMA DENGAN ALAMAT SESUAI IDENTITAS</label> </div> -->
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label>ALAMAT</label>
+								<input type="text" name="CorrespondenceAddress" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>KOTA</label>
+								<select type="text" name="CorrespondenceCityCode" class="form-control selection" data-method="master.city" data-key="CityCode" data-val="CityName" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>KODE POS</label>
+								<input type="text" name="CorrespondencePostalCode" class="form-control" data-mask="99999" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>NEGARA</label>
+								<select type="text" name="CorrespondenceCountryID" class="form-control selection" data-method="master.country" data-key="CountryID" data-val="Nationality" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>PROVINCE</label>
+								<select type="text" name="CorrespondenceProvince" class="form-control selection" data-method="master.province" data-key="ProvinceID" data-val="Province" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>TELEPON KORESPONDENSI</label>
+								<input type="text" name="CorrespondencePhone" required class="form-control" data-mask="9999 9999-9999"
+								 placeholder="">
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>EMAIL KORESPONDENSI</label>
+								<input type="email" name="CorrespondenceEmail" required class="form-control" placeholder=""> </div>
+						</div>
+						<!-- <div class="col-xl-4">
+											<div class="form-group">
+													<label>NO. FAX KORESPONDENSI</label>
+													<input type="text" name="CorrespondenceFax" class="form-control" data-mask="(999) 999-9999" placeholder=""> </div>
+										</div> -->
+					</div>
+					<!-- <h3 class="portfolio_name" style="margin-top:15px;">PEKERJAAN & SUMBER PENGHASILAN</h3> -->
+					<div class="row">
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>PEKERJAAN</label>
+								<select type="text" name="OccupationID" required class="form-control selection" data-method="master.occupation"
+								 data-key="OccupationID" data-val="OccupationCode" placeholder=""></select> </div>
+						</div>
+						<!-- <div class="col-xl-4">
+							<div class="form-group">
+								<label>SUMBER DANA</label>
+								<input type="text" name="SourceofFund" required class="form-control" placeholder=""> </div>
+						</div> -->
+						<!-- <div class="col-xl-4">
+							<div class="form-group">
+								<label>TUJUAN INVESTASI</label>
+								<input type="text" name="InvestmentObjective" class="form-control" placeholder=""> </div>
+						</div> -->
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>BANK CODE</label>
+								<select type="text" name="AccountNotes" required class="form-control selection" data-method="master.bankcode"
+								 data-key="BankCode" data-val="BankCode" placeholder=""></select> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>BANK NAME</label>
+								<input type="text" name="BankName" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>BANK BRANCH</label>
+								<input type="text" name="BankBranch" class="form-control" placeholder=""> </div>
+						</div>
+						<!-- <div class="col-xl-4">
+							<div class="form-group">
+								<label>BANK COUNTRY</label>
+								<select type="text" name="BankCountryID" required class="form-control selection" data-method="master.country"
+								 data-key="CountryID" data-val="Nationality" placeholder=""></select> </div>
+						</div> -->
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>ACCOUNT CCY</label>
+								<input type="text" name="AccountCcyID" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>ACCOUNT NO</label>
+								<input type="text" name="AccountNo" required class="form-control" placeholder=""> </div>
+						</div>
+						<div class="col-xl-4">
+							<div class="form-group">
+								<label>ACCOUNT NAME</label>
+								<input type="text" name="AccountName" required class="form-control" placeholder=""> </div>
+						</div>
+						<!-- <div class="form-group">
+													<label>NAMA PERUSAHAAN</label>
+													<input type="text" name="CompanyName" class="form-control" placeholder=""> </div> -->
+						<!-- <div class="form-group">
+													<label>ALAMAT PERUSAHAAN</label>
+													<input type="text" name="CompanyAddress" class="form-control" placeholder=""> </div> -->
+						<!-- <div class="form-group">
+													<label>JABATAN</label>
+													<input type="text" name="Position" class="form-control" placeholder=""> </div> -->
+						<!-- <div class="form-group">
+													<label>BENTUK USAHA</label>
+													<select type="text" name="BusinessTypeID" class="form-control selection" data-method="master.businesstype" data-key="TypeID" data-val="TypeCode" placeholder=""></select> </div> -->
+						<!-- <div class="form-group">
+													<label>PENGHASILAN PERTAHUN</label>
+													<input type="text" name="AnnualIncome" class="form-control" placeholder=""> </div> -->
+					</div>
+					<button type="submit" id="btn_draft" class="primary btn btn-success waves-effect waves-light m-r-10">SIMPAN</button>
+					<button type="submit" id="btn_cancel" class="primary btn btn-warning waves-effect waves-light m-r-10">BATAL RUBAH</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button type="submit" id="btn_print" class="btn btn-secondary waves-effect waves-light m-r-10">PRINT PDF</button>
+					<button type="submit" id="btn_email" class="btn btn-secondary waves-effect waves-light m-r-10">SENT PDF TO EMAIL</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="row"> -->
+<!-- <div class="col-lg-12"> -->
+<!-- <img src="{$.const.BASE_URL}__repository/tmp/a284e76f-cf51-4fee-9704-d6c7851162b0.jpg" style="width:100%; margin:auto; display:block;"> -->
+<!-- <img src="{$.const.BASE_URL}__repository/tmp/4b5345b1-5d70-4a36-b856-bb5e131b8389.jpg" style="width:100%; margin:auto; display:block;"> -->
+<!-- <img src="{$.const.BASE_URL}__repository/tmp/85d01bec-2df7-49b6-a7a0-9bda4066b011.jpg" style="width:100%; margin:auto; display:block;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<div id="shelter_language_sub" style="display:none;">{$.php.json_encode($language)}</div>

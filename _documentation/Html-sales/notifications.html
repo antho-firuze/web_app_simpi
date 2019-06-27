@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Notifications | Eternity Admin Theme | Template</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="description" content="This template is the perfect way to design a website with hundreds of possible features and plugins required while designing/developing a Website. It gives you different layouts and plugins to design a dashboard or a webform. Based on Jquery, the interface is light,responsive and ready to use. Eternity Admin provides custom layouts, error pages and themes to be used with your website. One of the main features of Eternity Admin is that it is compatible with all browsers. With more than 100 different buttons styles and grid layouts, this template becomes even more powerful." />
+
+<meta name="keywords" content="dashboard, template, admin, theme, website, free, layout, web, responsive" />
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css"  />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript" src="js/jquery.msgbox.js"></script><!--Alerts Message popup-->
+
+<script type="text/javascript" src="js/jquery.purr.js"></script><!--purr popup-->
+
+<script type='text/javascript' src='js/jquery.simplemodal.js'></script>
+
+<script src="js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/vertlib.min.js"></script><!-- Right Menu Fixed Scroll-->
+<script type="text/javascript" src="js/StickyScroller.min.js"></script><!-- Right Menu Fixed Scroll-->
+
+<script type='text/javascript' src='js/fullcalendar.min.js'></script>
+<script src="js/elfinder.min.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+
+<body>
+ 
+   <div class="header">
+    
+           <div id="logo"><img src="images/logo.png" alt="/" /></div>
+           
+           <div class="top-nav">
+               <ul>
+                   <li><a href="dashboard.html" title="Dashboard"><img src="images/icons/dashboard.png" alt="/" />Dashboard</a></li>
+                   <li><a href="forms.html" title="Forms" ><img src="images/icons/form.png" alt="/" />Transaction</a></li>
+                   <li><a href="elements.html" title="Elements" ><img src="images/icons/elements.png" alt="/" />Reporting</a></li>
+                   <li><a href="plugins.html" title="Plugins" ><img src="images/icons/plugins.png" alt="/" />General Ledger</a></li>
+                   <li><a href="#" title="Notifications" class="active" ><img src="images/icons/notification.png" alt="/" />Statpro</a></li><!--Add "active" Class for Current Page-->
+                   <li><a href="additional.html" title="Additional Elements" ><img src="images/icons/settings.png" alt="/" />Administrator</a></li>
+               </ul>
+           </div>
+    
+   </div>
+   <!--Header-End-->
+   
+   <div class="clear"></div>
+  
+     <div class="tabs-contenor">
+       
+       <div class="profile">
+         <form action="http://infynitix.com/" target="_blank">
+         <img src="images/user.jpg" alt="User" />
+         <h2>DESIGNER AKSH</h2>
+         <h4>Reportin Website <input type="submit" class="common-button" value="infynitix.com" /></h4>
+         <h4><a href="#">Help</a> . <a href="#">Account</a> . <a href="#">Logout <img src="images/icons/login.jpg" alt="login" /></a></h4>
+         </form>      
+       </div>
+        
+       <h3><a href="#">Dashboard</a> <img src="images/icons/arrow.jpg" /> <a href="#">Level2</a> <img src="images/icons/arrow.jpg" alt="/" /> <a href="#">Level3</a></h3>
+       <h1>NOTIFICATIONS</h1>
+       
+       <div class="tabs_links">
+           <ul>
+               <li><a href="#dialogbox">Dialog Boxes </a></li>
+               <li><a href="#alerts">Popup Alerts <span>6</span></a></li>
+               <li><a href="#sitkynotes">Sitky Notes</a></li>
+               <li><a href="#modalbox">Modal Window</a></li>
+           </ul>
+       </div>
+     </div>
+<!--Tabs-Box-Ends-->
+   
+      
+   
+       <div id="main">                               
+    
+            <div id="right-menu">
+              
+              <div id="scrollbox">
+              
+              <form action="" method="post" id="form-search">
+                <input type="text" class="search" onblur="if(this.value==''){this.value='Search...'}" onfocus="if(this.value=='Search...'){this.value=''}" value="Search..." />
+                <input type="submit" class="search-submit" value=" " />
+	          </form>
+              
+              <div class="clear"></div>
+              
+              <input type="submit" class="common-button advanced-search" value="ADVANCED SEARCH" />
+               
+               <div class="clear"></div>
+               
+               <ul id="main-nav">  <!-- Accordion Menu -->
+				
+				
+				<li>
+                    <img src="images/menu-arrow.png" alt="Arrow" /> 
+					<a href="#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
+					 Pending Tasks (4)
+                    </a>
+ 
+			         <ul style="display: block;">
+						<li><a href="#">You have 75 potential Leads</a></li>
+						<li><a href="#">Submit Report</a></li> <!-- Add class "current" to sub menu items also -->
+						<li><a href="#">Metting 4:30 pm</a></li>
+					 </ul>
+				</li>
+				
+				<li>
+                  <img src="images/menu-arrow.png" alt="Arrow" />
+				  <a style="padding-right: 15px;" href="#" class="nav-top-item current">
+						Todays Mail / Messages
+				  </a>
+                  
+	          <ul style="display: none;">
+						<li><a href="#">Hi, Akshay we are ...</a></li>
+						<li><a href="#">Administration</a></li>
+					</ul>
+				</li>
+				
+				<li>
+                  <img src="images/menu-arrow.png" alt="Arrow" />
+				  <a href="#" class="nav-top-item current">
+						Traffic Sources
+				  </a>
+				  <ul style="display: none;">
+					<li><a href="#">Avg. Time on Site </a></li>
+						<li><a href="#">213 New People <input type="button" class="common-button" value="View All" /></a></li>
+						<li><a href="#">Bounce Rate 87.23%</a></li>
+						<li><a href="#">Demo Submenu</a></li>
+					</ul>
+				</li>
+				
+				<li>
+                    <img src="images/menu-arrow.png" alt="Arrow" />
+					<a href="#" class="nav-top-item">
+						Todays Events 05/09/1990
+					</a>
+					<ul style="display: none;">
+						<li><a href="#">Project Testing</a></li>
+						<li><a href="#">Web Designing</a></li>
+						<li><a href="#">Mobile Applications</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a style="padding-right: 15px;" href="#" class="nav-top-item no-submenu">
+					 Menu without Sub menu
+                    </a>
+				</li>   
+				
+			</ul>
+             <!-- Accordion Menu  END-->
+             
+            </div> 
+             
+         </div>
+            <!-- RIGHT MENU END -->
+       
+       
+            <div id="content">
+            
+            
+            
+               <div class="tab_content" id="dialogbox"  >
+				    
+                  <div class="element-box">
+                     <h1>Example Diolog Boxes</h1>
+                     
+                     <div class="notification attention png_bg">
+				       <a href="#" class="close"><img src="images/icons/cross_grey_small.png" title="Close this notification" alt="close"></a>
+				       <div>
+					    <strong>Attention Messag</strong>e : this an example to show attention message, to close this message press close icon.
+				       </div>
+			         </div>
+                     
+                   <div class="notification information png_bg">
+				       <a href="#" class="close"><img src="images/icons/cross_grey_small.png" title="Close this notification" alt="close"></a>
+	              <div>
+					    <strong>Information Message</strong> : this an example to show information message
+				       </div>
+			         </div>
+                     
+                   <div class="notification success png_bg">
+				       <a href="#" class="close"><img src="images/icons/cross_grey_small.png" title="Close this notification" alt="close"></a>
+	              <div>
+					    <strong>Success Message</strong> : this an example to show success message
+				       </div>
+			         </div>
+                     
+                   <div class="notification error png_bg">
+				       <a href="#" class="close"><img src="images/icons/cross_grey_small.png" title="Close this notification" alt="close"></a>
+	              <div>
+					    <strong>Error Message</strong> : this an example to show error message. very easy to costomize. 
+				       </div>
+			         </div>
+                     
+                   <div class="notification help png_bg">
+				       <a href="#" class="close"><img src="images/icons/cross_grey_small.png" title="Close this notification" alt="close"></a>
+	              <div>
+					    <strong>Help Message</strong> : this an example to show help message. very easy to costomize. 
+				       </div>
+			         </div>
+                     
+                     <hr />
+                     <div class="clear"></div>
+                     
+                     <h1>Information Boxes</h1>
+                     
+                     <div class="content-box half-box">
+				
+				     <div class="content-box-header">
+					    <h3 style="cursor: s-resize;">Click me to minimize !</h3> <a href="#" class="close_2"></a>
+				     </div> <!-- End .content-box-header -->
+				
+				     <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.
+					    </p>
+                    </div> <!-- End .content-box-content -->
+				
+			        </div><!--END CONEETENT_BOX--->
+                    
+                    
+                    
+                    <div class="content-box half-box right">
+				
+				     <div class="content-box-header">
+					    <h3 style="cursor: s-resize;">Click me to minimize !</h3> <a href="#" class="close_2"></a>
+				     </div> <!-- End .content-box-header -->
+				
+				     <div class="content-box-content">
+					    <h4>Maecenas dignissim</h4>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.
+					    </p>
+                    </div> <!-- End .content-box-content -->
+				
+			        </div><!--END CONEETENT_BOX--->
+                    
+                    
+                     
+                  </div><!--ELEMENTS BOX ENDS-->
+                  
+                 
+                  
+               </div>
+               <!--DIALOG BOXES TAB ENDS-->
+               
+               
+               
+               
+			   <!--ALERTS TAB-->
+			   <div class="tab_content" id="alerts" >
+               
+                  <div class="element-box">
+                     
+                     <h1>Popup Alerts Examples</h1>
+                     <!--<a href="message.html" rel="modal" title="3 Messages">POP Up</a>
+                     <br />-->
+                     
+                     <p> This is an example for "Simple Alert" you just need to insert "simple-alert" ID to use this alert and you can easly edit its contents.</p>
+                     <pre>$.msgbox("jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.", {type: "info"});</pre>
+                     <button id="simple-alert" class="button">Informative Alert</button>
+                     <br /><br />
+                     
+                     
+                     <p> This is an example for "Simple Alert" you just need to insert "simple-alert" ID to use this alert and you can easly edit its contents.</p>
+                     <pre>$.msgbox("The selection includes process white objects. Overprinting such objects is only useful in combination with transparency effects.");</pre>
+                     <button id="attention-alert" class="button">Simple Alert</button>
+                     <br /><br />
+                     
+                     <p> This is an example for "Simple Alert" you just need to insert "simple-alert" ID to use this alert and you can easly edit its contents.</p>
+                     <pre>$.msgbox("An error 1053 ocurred while perfoming this service operation on the MySql Server service.", {type: "error"});</pre>
+                     <button id="error" class="button">Error Alert</button>
+                     <br /><br />
+                     
+                     <p> This is an example for "Simple Alert" you just need to insert "simple-alert" ID to use this alert.</p>
+                     <pre>$.msgbox("Are you sure that you want to permanently delete the selected element?", {
+	type: "confirm",
+    
+	buttons : [
+        {type: "submit", value: "Yes"},{type: "submit", value: "No"},
+		{type: "cancel", value: "Cancel"}]},
+	
+	function(result) { $("#result2").text(result); });</pre>
+                     <button id="confirm" class="button">Confirmation Alert</button>
+                     <br /><br />
+                     
+                     <p> This is an example for "Simple Alert" you just need to insert "simple-alert" ID to use this alert.</p>
+                     <pre>  $.msgbox("In order to process your request you must provide the following:", {
+    type    : "prompt",
+    name    : "lock",
+    inputs  : [
+      {type: "text",     name: "username", value: "", label: "Username:", required: true},
+      {type: "password", name: "password", value: "", label: "Password:", required: true}
+    ],
+    buttons : [
+      {type: "submit", name: "submit", value: "Sign In"},
+      {type: "cancel", value: "Cancel"}
+    ],
+    form : {
+      active: true,
+      method: 'post',
+      action: 'login.php'
+    }
+  });
+  
+  ev.preventDefault();</pre>
+                     <button id="simple_forms" class="button">Form Alert</button>
+                     <br /><br />
+                     
+                     <p> This is an example for "Simple Alert" you just need to insert "simple-alert" ID to use this alert.</p>
+                     <pre>$.msgbox("In order to process your request you must provide the following:", {
+    type    : "prompt",
+    inputs  : [
+      {type: "text",     label: "Insert your Name:", value: "George", required: true},
+      {type: "password", label: "Insert your Password:", required: true}
+    ],
+    buttons : [
+      {type: "submit", value: "OK"},
+      {type: "cancel", value: "Exit"}
+    ]
+  }, function(name, password) {
+    if (name) {
+      $.msgbox("Hello "+name+", your password is "+password+".", {type: "info"});
+    } else {
+      $.msgbox("Bye!", {type: "info"});
+    }
+  });</pre>
+                     <button id="form_with_confirm" class="button">Responcive Form Alert</button>
+                     <br /><br />
+                 
+                 </div><!--ELEMENT-BOX--END-->
+                 
+			   </div>
+               
+               
+               
+               
+               
+               
+               <!--STIKY NOTES TAB-->
+			   <div class="tab_content" id="sitkynotes" >
+               
+                 <div class="element-box">
+                 
+                   <h1>Stiky Notes Examples</h1>
+                   
+                   <p> This is an example for Auto Hide "Sitky Note" you just need to insert "stiky-auto-hide" Class to use this Stiky Note and you can easly edit its contents.</p>
+                   <button class="button stiky-auto-hide" id="confirm">Auto Hide Stiky Note</button>
+                   
+                   <br /><br />
+                   
+                   <p> This is an example for Auto Hide "Sitky Note" you just need to insert "stiky-auto-hide" Class to use this Stiky Note and you can easly edit its contents.</p>
+                   
+                   <button class="button stiky-fixed" id="confirm">Fixed Stiky Note</button>
+                 
+                 </div><!--ELEMENT-BOX--END-->
+                 
+			   </div>
+               
+               
+               
+               
+               
+               
+               <!--MODAL BOX TAB-->
+			   <div class="tab_content" id="modalbox" >
+               
+                 <div class="element-box">
+                 
+                   <h1>Modak Box Example</h1>
+                   
+                   <p> This is an example for Basic Modal Box you just need to insert "basic-modal" Class to use this Modal Box and you can easly edit its contents.</p>
+                   
+                   <pre>$('.basic-modal').click(function (e) {
+$('#basic-modal-content').modal();
+return false;
+});</pre>
+                   
+			       <input type='button' name='basic' value='Simple Modal' class="button basic-modal"/>
+                   
+                   <!-- modal content -->
+		           <div id="basic-modal-content">
+			         <h3>Basic Modal Dialog</h3><br />
+			         <p>For this demo, SimpleModal is using this "hidden" data for its content. You can also populate the modal dialog with an AJAX response, standard HTML or DOM element(s).</p><br />
+			        <p>Examples:</p><br />
+			        <p><code>$('#basicModalContent').modal(); // jQuery object - this demo</code></p>
+			        <p><code>$.modal(document.getElementById('basicModalContent')); // DOM</code></p>
+			        <p><code>$.modal('&lt;p&gt;&lt;b&gt;HTML&lt;/b&gt; elements&lt;/p&gt;'); // HTML</code></p>
+			        <p><code>$('&lt;div&gt;&lt;/div&gt;').load('page.html').modal(); // AJAX</code></p>
+		           </div>
+                   
+		           
+                   <br /><br />
+                   
+                   <p> This is an example for Scrolling Modal Box you just need to insert "scrolling-moda" Class to use this Modal Box and you can easly edit its contents.</p>
+                   
+                   <pre>$('.scrolling-moda').click(function (e) {
+$('#basic-modal-content2').modal();
+return false;
+});</pre>
+                   
+			       <input type='button' name='basic' value='Simple Modal' class="button scrolling-modal"/>
+                   
+                   
+                   <!-- modal content -->
+		           <div id="basic-modal-content2">
+                     <div style="overflow-x:auto;">
+			         <h3>Scrolling Modal Dialog</h3><br />
+			           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.
+					    </p>
+                        <br /><br />
+                        <p>Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.
+					    </p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porta lectus. Maecenas dignissim enim quis ipsum mattis aliquet. Maecenas id velit et elit gravida bibendum. Duis nec rutrum lorem. Donec egestas metus a risus euismod ultricies. Maecenas lacinia orci at neque commodo commodo.
+					    </p>
+                    </div>
+		           </div>
+                   
+                   
+                   
+                  
+                      
+                 
+                 </div><!--ELEMENT-BOX--END-->
+                 
+			   </div>
+               
+            
+            </div>
+            <!--CONTENT-END-->
+         
+         
+         
+        </div>
+        <!--MAIN--END--> 
+        
+        
+        
+        <div id="footer">
+          COPYRIGHT &copy; ETERNITY ADMIN | ALL RIGHTS RESERVED
+          <span>
+          <a href="#">Help</a> &sdot; 
+          <a href="#">Account Options</a> &sdot;
+          <a href="#">Log out <img src="images/icons/logout.png" alt="/" /></a> &sdot; 
+          <a href="#">Email Us</a> &sdot;
+          <a href="#">About Eternity</a> &sdot;
+          <a href="#">Privacy Policy</a> &sdot;
+          <a href="#">Terms Of Use</a> &sdot;
+          <b>192.68.34.101</b>
+          </span>
+        </div>  
+        <!--FOOTER-ENDS-->
+                                    
+
+</body>
+</html>
